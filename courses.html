@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses & Programs | Ol Kalou TVC</title>
+    <meta name="description" content="Explore our wide range of technical and business programs including diploma, certificate, and artisan courses.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar & Header (Same as index.html) -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-contact">
+                <i class="fas fa-phone-alt"></i> +254 (0) 700 000 000 &nbsp; | &nbsp; 
+                <i class="fas fa-envelope"></i> info@olkaloutvc.ac.ke
+            </div>
+            <div class="top-bar-links">
+                <a href="#">Student Portal</a>
+                <a href="#">Staff Portal</a>
+                <a href="#">E-Learning</a>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container main-nav">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap fa-3x" style="color: var(--primary);"></i>
+                <div class="logo-text">
+                    <h1>OL KALOU TVC</h1>
+                    <p>Empowering Skills</p>
+                </div>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="student-life.html">Student Life</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="admissions.html" class="btn btn-primary" style="color: white;">Apply Now</a>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: linear-gradient(rgba(15, 48, 87, 0.8), rgba(15, 48, 87, 0.9)), url('https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+        <div class="container">
+            <h1>Academic Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Courses</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore Our Courses</h2>
+                <p class="section-subtitle">We offer competitive courses tailored to meet the dynamic needs of the job market. Browse our departments below.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="btn btn-primary filter-btn active" data-filter="all">All Courses</button>
+                <button class="btn btn-secondary filter-btn" data-filter="engineering">Engineering</button>
+                <button class="btn btn-secondary filter-btn" data-filter="ict">ICT & Computer Studies</button>
+                <button class="btn btn-secondary filter-btn" data-filter="business">Business & Finance</button>
+                <button class="btn btn-secondary filter-btn" data-filter="hospitality">Hospitality</button>
+            </div>
+
+            <div class="courses-grid" id="course-list">
+                
+                <!-- Engineering -->
+                <div class="course-card course-item" data-category="engineering">
+                    <div class="course-img">
+                        <span class="course-badge">Diploma</span>
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356f58?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Building and Civil Engineering">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Building & Civil Engineering</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 3 Years (9 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE C-</span>
+                        </div>
+                        <p class="course-desc">Structural design, construction management, and surveying.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card course-item" data-category="engineering">
+                    <div class="course-img">
+                        <span class="course-badge">Certificate</span>
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Electrical Installation">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Electrical & Electronics</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 2 Years (6 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE D</span>
+                        </div>
+                        <p class="course-desc">Electrical installation, maintenance of electronic systems.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ICT -->
+                <div class="course-card course-item" data-category="ict">
+                    <div class="course-img">
+                        <span class="course-badge">Diploma</span>
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ICT">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Information Communication Tech</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 3 Years (9 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE C-</span>
+                        </div>
+                        <p class="course-desc">Software development, networking, and systems administration.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card course-item" data-category="ict">
+                    <div class="course-img">
+                        <span class="course-badge">Artisan</span>
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Computer Application">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Computer Applications</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 Months</span>
+                            <span><i class="fas fa-graduation-cap"></i> Open</span>
+                        </div>
+                        <p class="course-desc">Basic computer packages, typing, and office software.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="course-card course-item" data-category="business">
+                    <div class="course-img">
+                        <span class="course-badge">Diploma</span>
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Business Management">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Business Management</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 3 Years (9 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE C-</span>
+                        </div>
+                        <p class="course-desc">Corporate management, entrepreneurship, and economics.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card course-item" data-category="business">
+                    <div class="course-img">
+                        <span class="course-badge">Certificate</span>
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Supply Chain Management">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Supply Chain Management</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 2 Years (6 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE D</span>
+                        </div>
+                        <p class="course-desc">Procurement, logistics, and supply chain strategies.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospitality -->
+                <div class="course-card course-item" data-category="hospitality">
+                    <div class="course-img">
+                        <span class="course-badge">Diploma</span>
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Food and Beverage">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Food & Beverage Management</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 3 Years (9 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE C-</span>
+                        </div>
+                        <p class="course-desc">Catering, food production, and restaurant management.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card course-item" data-category="hospitality">
+                    <div class="course-img">
+                        <span class="course-badge">Artisan</span>
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Catering">
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Artisan in Catering</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 1 Year (3 Terms)</span>
+                            <span><i class="fas fa-graduation-cap"></i> KCSE E / Open</span>
+                        </div>
+                        <p class="course-desc">Basic culinary skills and food handling hygiene.</p>
+                        <div class="course-footer">
+                            <a href="#" class="course-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Found the Right Course?</h2>
+                <p>Start your application process today to join our next intake and build a successful career.</p>
+                <a href="admissions.html" class="btn btn-primary" style="background-color: var(--surface); color: var(--primary);">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <!-- (Normally you would use a templating engine like PHP, Pug, or components in React/Vue. For vanilla HTML, we duplicate the footer) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <i class="fas fa-graduation-cap fa-2x" style="color: white;"></i>
+                        <div class="logo-text">
+                            <h2 style="color: white; font-size: 1.25rem;">OL KALOU TVC</h2>
+                        </div>
+                    </a>
+                    <p>A premier technical training institute in Nyandarua County, dedicated to providing quality skills for self-reliance and national development.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i> About Us</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i> Academic Programs</a></li>
+                        <li><a href="admissions.html"><i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i> Admissions</a></li>
+                        <li><a href="student-life.html"><i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i> Student Life</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ol Kalou Town, Nyandarua County<br>P.O Box 123-20303, Ol Kalou</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+254 700 000 000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@olkaloutvc.ac.ke</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ol Kalou Technical and Vocational College. All Rights Reserved.</p>
+                <p class="footer-dev-credits">
+                    <a href="">
+                        <i class="fas fa-cog dev-gear"></i>
+                        Powered and developed by:&nbsp;<span class="dev-brand">Infrabit Systems</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
